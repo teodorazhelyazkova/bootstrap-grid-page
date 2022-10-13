@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -27,8 +27,8 @@
     <nav class="navbar navbar-expand-xxl bg-white navbar-light py-5">
       <div class="container justify-content-between">
         <a href="#" class="navbar-brand">
-          <h3 class="fw-bold"><span class="text-danger">Code</span>IT</h3>
-          <h6>STORE</h6></a
+          <h3 class="fw-bold mb-0"><span class="text-danger">Code</span>IT</h3>
+          <h6 class="logo-store">STORE</h6></a
         >
         <button
           class="navbar-toggler"
@@ -94,6 +94,7 @@
       </div>
     </section>
 
+    <!-- GRID -->
     <section class="p-5">
       <div class="container">
         <div class="d-md-flex justify-content-md-end pb-5">
@@ -103,11 +104,12 @@
             CLEAR LIST
           </button>
         </div>
-        <div class="row text-center pb-5">
-          <div class="col-md">
+        <div id="paginated-list" class="row text-center">
+          <!-- FIRST PAGE -->
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <div class="card bg-white text-dark">
               <img
-                src="./img/demo_phone.jpg"
+                src="./img/huawei-nova-8i.png"
                 class="card-img-top"
                 alt="Phone picture"
               />
@@ -128,8 +130,8 @@
                 ></a>
               </div>
             </div>
-          </div>
-          <div class="col-md">
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -153,8 +155,8 @@
                 ></a>
               </div>
             </div>
-          </div>
-          <div class="col-md">
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -178,8 +180,8 @@
                 ></a>
               </div>
             </div>
-          </div>
-          <div class="col-md">
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -203,10 +205,8 @@
                 ></a>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md">
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -230,8 +230,8 @@
                 ></a>
               </div>
             </div>
-          </div>
-          <div class="col-md">
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -255,8 +255,8 @@
                 ></a>
               </div>
             </div>
-          </div>
-          <div class="col-md">
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -280,8 +280,8 @@
                 ></a>
               </div>
             </div>
-          </div>
-          <div class="col-md">
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -305,99 +305,704 @@
                 ></a>
               </div>
             </div>
-          </div>
+          </li>
+          <!-- SECOND PAGE -->
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/dummy_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">HUAWEI MATE S</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">SONY XPERIA Z5</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$550.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">XIAOMI MI 41</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">HUAWEI G8 4C</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">IPHONE ROSE GOLD</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$200.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">HUAWEI G8 4G</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">GALAXY CORE PRIME</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$399.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">APPLE IPHONE 6S</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$550.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <!-- THIRD PAGE -->
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/IP11RDUMMY009.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">HUAWEI MATE S</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">SONY XPERIA Z5</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$550.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">XIAOMI MI 41</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">HUAWEI G8 4C</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">IPHONE ROSE GOLD</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$200.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">HUAWEI G8 4G</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">GALAXY CORE PRIME</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$399.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">APPLE IPHONE 6S</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$550.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <!-- FOURTH PAGE -->
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/dummy.png"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">HUAWEI MATE S</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">SONY XPERIA Z5</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$550.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">XIAOMI MI 41</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">HUAWEI G8 4C</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">IPHONE ROSE GOLD</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$200.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">HUAWEI G8 4G</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$350.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">GALAXY CORE PRIME</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$399.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img
+                src="./img/demo_phone.jpg"
+                class="card-img-top"
+                alt="Phone picture"
+              />
+              <div class="card-body text-center pb-0">
+                <h5 class="card-title fw-bold">APPLE IPHONE 6S</h5>
+                <p class="card-text">
+                  <span class="text-danger fw-bold">$550.00</span>
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-trash-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  ><i class="bi bi-cart-fill"></i
+                ></a>
+              </div>
+            </div>
+          </li>
         </div>
       </div>
     </section>
 
+    <!-- PAGINATION -->
     <nav aria-label="My whishlist page navigation" class="py-5">
       <div class="container">
-        <ul class="pagination justify-content-center">
-          <li class="page-item border border-1 active" aria-current="page">
-            <span class="page-link bg-white text-danger fw-bold">1</span>
-          </li>
-          <li class="page-item border border-1">
-            <a class="page-link" href="#"
-              ><span class="text-muted fw-bold">2</span></a
-            >
-          </li>
-          <li class="page-item border border-1">
-            <a class="page-link" href="#"
-              ><span class="text-muted fw-bold">3</span></a
-            >
-          </li>
-          <li class="page-item border border-1">
-            <a class="page-link" href="#"
-              ><span class="text-muted fw-bold">4</span></a
-            >
-          </li>
-        </ul>
+        <ul
+          id="pagination-numbers"
+          class="pagination justify-content-center"
+        ></ul>
       </div>
     </nav>
 
-    <section class="container p-5">
-      <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <div class="card">
-                <div class="row g-0">
-                  <div class="h1 col-md-3">
-                    <i class="bi bi-hand-thumbs-up-fill"></i>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h6 class="card-title fw-bold">FULL WARRANTY</h6>
-                      <p class="card-text">Read About Our Warranty</p>
-                      <p class="card-text">.....</p>
+    <!-- CAROUSEL -->
+    <section class="p-5 border border-top-1">
+      <div class="container">
+        <div
+          class="row mx-auto my-auto justify-content-center border border-top-0 border-dark"
+        >
+          <div
+            id="recipeCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="card card--carousel">
+                  <div class="row align-items-flex-start">
+                    <div class="h1 col-md-2">
+                      <i class="bi bi-hand-thumbs-up-fill"></i>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h6 class="card-title fw-bold">FULL WARRANTY</h6>
+                        <p class="card-text p--small m-0">
+                          Read About Our Warranty
+                        </p>
+                        <p class="card-text p--small">.....</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="row g-0">
-                  <div class="h1 col-md-3">
-                    <i class="bi bi-truck"></i>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h6 class="card-title fw-bold">EXPRESS SHIPPING</h6>
-                      <p class="card-text">Local & International Shipping</p>
-                      <p class="card-text">.....</p>
+              <div class="carousel-item">
+                <div class="card card--carousel">
+                  <div class="row align-items-flex-start">
+                    <div class="h1 col-md-2">
+                      <i class="bi bi-truck"></i>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h6 class="card-title fw-bold">EXPRESS SHIPPING</h6>
+                        <p class="card-text p--small m-0">
+                          Local & International Shipping
+                        </p>
+                        <p class="card-text p--small">.....</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="row g-0">
-                  <div class="h1 col-md-3">
-                    <i class="bi bi-chat-dots-fill"></i>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h6 class="card-title fw-bold">MOBILE BLOG</h6>
-                      <p class="card-text">Discuss Your Favourite Phone</p>
-                      <p class="card-text">.....</p>
+              <div class="carousel-item">
+                <div class="card card--carousel">
+                  <div class="row align-items-flex-start">
+                    <div class="h1 col-md-2">
+                      <i class="bi bi-chat-dots-fill"></i>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h6 class="card-title fw-bold">MOBILE BLOG</h6>
+                        <p class="card-text p--small m-0">
+                          Discuss Your Favourite Phone
+                        </p>
+                        <p class="card-text p--small">.....</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="row g-0">
-                  <div class="h1 col-md-3">
-                    <i class="bi bi-telephone-outbound-fill"></i>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h6 class="card-title fw-bold">24/7 SUPPORT</h6>
-                      <p class="card-text">Get Full Support via Chat</p>
-                      <p class="card-text">.....</p>
+              <div class="carousel-item">
+                <div class="card card--carousel">
+                  <div class="row align-items-flex-start">
+                    <div class="h1 col-md-2">
+                      <i class="bi bi-telephone-outbound-fill"></i>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h6 class="card-title fw-bold">24/7 SUPPORT</h6>
+                        <p class="card-text p--small m-0">
+                          Get Full Support via Chat
+                        </p>
+                        <p class="card-text p--small">.....</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -408,21 +1013,24 @@
       </div>
     </section>
 
-    <section class="bg-light text-dark p-5">
+    <!-- SUBSCRIBE -->
+    <section class="bg-light text-dark p-5 border border-top-1">
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">
           <div>
-            <h5 class="mb-0 fw-bold text-muted">
+            <h6 class="pt-2 mb-0 text-muted p--small">
               SUBSCRIBE TO LATEST SMARTPHONES
-            </h5>
-            <h5 class="fw-bold text-muted">NEWS & GREAT DEALS WE OFFER</h5>
+            </h6>
+            <h6 class="py-2 mb-0 text-muted p--small">
+              NEWS & GREAT DEALS WE OFFER
+            </h6>
           </div>
 
           <form class="input-group news-input" novalidate>
             <input
               type="email"
               id="email"
-              class="form-control"
+              class="form-control p--small"
               placeholder="ENTER YOUR EMAIL ADDRESS ..."
               required
             />
@@ -432,7 +1040,7 @@
           </form>
 
           <div
-            class="btn-group btn-group-sm"
+            class="btn-group btn-group-sm py-2"
             role="group"
             aria-label="First group"
           >
@@ -459,11 +1067,12 @@
       </div>
     </section>
 
-    <footer class="p-3 bg-light text-dark">
+    <!-- FOOTER -->
+    <footer class="p-3 bg-light text-dark footer">
       <div
         class="container d-md-flex justify-content-between align-items-center"
       >
-        <p class="lead fw-bold text-black-50">
+        <p class="text-black-50 p--small">
           COPYRIGHT &copy; <span class="text-muted">CODEITSTORE</span> ALL
           RIGHTS RESERVED.
         </p>

@@ -1,48 +1,99 @@
-html,
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
 
-@media (min-width: 768px) {
-  .news-input {
-    width: 40%;
-  }
+li {
+  list-style: none;
+}
+
+a,
+button,
+input {
+  border-radius: 0px !important;
+}
+
+.pagination .active {
+  border: 1px solid #4b4b4b !important;
+  color: #dc3545 !important;
 }
 
 .header {
   background-image: url(./img/header-background.png);
 }
 
+.logo-store {
+  letter-spacing: 0.45rem;
+}
+
+.p--small {
+  font-size: 0.85rem;
+}
+
+.card--carousel {
+  border: none;
+}
+
+.footer {
+  background-color: #e6e6e6 !important;
+}
+
+/* CAROUSEL SLIDER QUERIES*/
 @media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
 }
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
-    display: flex;
+  display: flex;
 }
 
-/* medium and up screens */
 @media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-    }
-    
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
 }
 
 .carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
+.carousel-inner .carousel-item-start {
   transform: translateX(0);
+}
+
+/* THE REST OF THE QUERIES*/
+@media (min-width: 768px) {
+  .news-input {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .grid-gap {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1140px;
+  }
 }
