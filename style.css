@@ -39,6 +39,45 @@ input {
   font-size: 0.85rem;
 }
 
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  aspect-ratio: 1 / 1;
+}
+
+.overlay:hover {
+  opacity: 0.8;
+}
+
+.card:hover {
+  background-color: #f8f9fa !important;
+}
+
+.card-body:hover ~ .overlay {
+  opacity: 0.8;
+}
+
+.card .btn:hover,
+.subscribe .btn:hover {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+.overlay-btn {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.card {
+  position: relative;
+}
+
 .card--carousel {
   border: none;
 }

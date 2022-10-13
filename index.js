@@ -1,5 +1,21 @@
-/* NEWSLETTER BUTTON */
+// SEARCH ITEMS
+const searchField = document.querySelector("#search-form");
+searchField.addEventListener("input", () => {});
 
+/* DELETE BUTTONS */
+const removeItemBtns = document.querySelectorAll(".overlay-btn");
+const deleteBtns = document.querySelectorAll(".bin");
+
+[...removeItemBtns, ...deleteBtns].forEach((btn) =>
+  btn.addEventListener("click", deleteItem)
+);
+
+function deleteItem(e) {
+  const productItem = e.target.closest("li");
+  productItem.remove();
+}
+
+/* NEWSLETTER BUTTON */
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (event) => {
@@ -11,7 +27,6 @@ form.addEventListener("submit", (event) => {
 });
 
 /* CAROUSEL SLIDER */
-
 let items = document.querySelectorAll(".carousel .carousel-item");
 
 items.forEach((el) => {

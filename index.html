@@ -24,6 +24,7 @@
     <title>CodeIT Store</title>
   </head>
   <body>
+    <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-xxl bg-white navbar-light py-5">
       <div class="container justify-content-between">
         <a href="#" class="navbar-brand">
@@ -72,6 +73,7 @@
             class="btn btn-outline-secondary fw-bold border border-secondary border-3 ps-3 pe-4 position-relative"
           >
             <i class="bi bi-bag-fill" style="color: red"></i> $ 460.00
+
             <span
               class="position-absolute top-50 start-100 translate-middle badge rounded-pill bg-dark text-center"
             >
@@ -83,6 +85,7 @@
       </div>
     </nav>
 
+    <!-- HEADER -->
     <section class="bg-light text-dark p-5 text-center text-sm-start header">
       <div class="container">
         <div class="d-sm-flex justify-content-between align-items-center">
@@ -97,7 +100,16 @@
     <!-- GRID -->
     <section class="p-5">
       <div class="container">
-        <div class="d-md-flex justify-content-md-end pb-5">
+        <div class="d-md-flex justify-content-md-end pb-5 gap-1">
+          <div class="form-outline border border-secondary border-3">
+            <input
+              type="search"
+              id="search-form"
+              class="form-control"
+              placeholder="Search ..."
+              aria-label="Search"
+            />
+          </div>
           <button
             class="btn btn-outline-secondary fw-bold border border-secondary border-3"
           >
@@ -106,7 +118,7 @@
         </div>
         <div id="paginated-list" class="row text-center">
           <!-- FIRST PAGE -->
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/huawei-nova-8i.png"
@@ -119,19 +131,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -144,19 +157,20 @@
                   <span class="text-danger fw-bold">$550.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -169,19 +183,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -194,19 +209,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -219,19 +235,20 @@
                   <span class="text-danger fw-bold">$200.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -244,19 +261,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -269,19 +287,20 @@
                   <span class="text-danger fw-bold">$399.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -294,20 +313,21 @@
                   <span class="text-danger fw-bold">$550.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
           <!-- SECOND PAGE -->
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/dummy_phone.jpg"
@@ -320,19 +340,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -345,19 +366,20 @@
                   <span class="text-danger fw-bold">$550.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -370,19 +392,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -395,19 +418,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -420,19 +444,20 @@
                   <span class="text-danger fw-bold">$200.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -445,19 +470,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -470,19 +496,20 @@
                   <span class="text-danger fw-bold">$399.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -495,20 +522,21 @@
                   <span class="text-danger fw-bold">$550.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
           <!-- THIRD PAGE -->
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/IP11RDUMMY009.jpg"
@@ -521,19 +549,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -546,19 +575,20 @@
                   <span class="text-danger fw-bold">$550.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -571,19 +601,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -596,19 +627,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -621,19 +653,20 @@
                   <span class="text-danger fw-bold">$200.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -646,19 +679,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -671,19 +705,20 @@
                   <span class="text-danger fw-bold">$399.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -696,20 +731,21 @@
                   <span class="text-danger fw-bold">$550.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
           <!-- FOURTH PAGE -->
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/dummy.png"
@@ -722,19 +758,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -747,19 +784,20 @@
                   <span class="text-danger fw-bold">$550.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -772,19 +810,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -797,19 +836,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -822,19 +862,20 @@
                   <span class="text-danger fw-bold">$200.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -847,19 +888,20 @@
                   <span class="text-danger fw-bold">$350.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -872,19 +914,20 @@
                   <span class="text-danger fw-bold">$399.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
               </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
+              </div>
             </div>
           </li>
-          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12 pb-3">
             <div class="card bg-white text-dark">
               <img
                 src="./img/demo_phone.jpg"
@@ -897,15 +940,16 @@
                   <span class="text-danger fw-bold">$550.00</span>
                 </p>
                 <a
-                  href="#"
-                  class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
+                  class="bin btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-trash-fill"></i
                 ></a>
                 <a
-                  href="#"
                   class="btn btn-outline-secondary border border-gray border-2 border-bottom-0"
                   ><i class="bi bi-cart-fill"></i
                 ></a>
+              </div>
+              <div class="overlay col-12">
+                <button class="overlay-btn">REMOVE FROM LIST</button>
               </div>
             </div>
           </li>
@@ -1014,7 +1058,7 @@
     </section>
 
     <!-- SUBSCRIBE -->
-    <section class="bg-light text-dark p-5 border border-top-1">
+    <section class="subscribe bg-light text-dark p-5 border border-top-1">
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">
           <div>
