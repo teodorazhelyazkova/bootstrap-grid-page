@@ -14,7 +14,7 @@ const searchField = document.querySelector("#search-form");
 searchField.addEventListener("input", (e) => {
   const searchFieldText = e.target.value;
   handleClearListBtnChange(searchFieldText);
-  handleSearchFieldInput(listItems, searchFieldText);
+  handleSearchFieldInput(paginatedList.querySelectorAll("li"), searchFieldText);
 });
 
 const handleSearchFieldInput = (listItems, searchFieldText) => {
@@ -55,7 +55,6 @@ const clearListBtn = document.querySelector(".clearBtn");
 clearListBtn.addEventListener("click", (e) => {
   searchField.value = "";
   handleClearListBtnChange("");
-  console.log("adjust pagination / reset list items etc");
 });
 
 function handleClearListBtnChange(currentSearchFieldText) {
@@ -63,14 +62,14 @@ function handleClearListBtnChange(currentSearchFieldText) {
 
   paginationNumbers.innerHTML = '';
   getPaginationNumbers(pageCount);
-  setCurrentPage(1, listItems);
+  setCurrentPage(1, paginatedList.querySelectorAll("li"));
 
   document.querySelectorAll(".pagination-number").forEach((pageLink) => {
     const pageIndex = Number(pageLink.getAttribute("page-index"));
 
     if (pageIndex) {
       pageLink.addEventListener("click", () => {
-        setCurrentPage(pageIndex, listItems);
+        setCurrentPage(pageIndex, paginatedList.querySelectorAll("li"));
       });
     }
   });
@@ -87,6 +86,9 @@ const deleteBtns = document.querySelectorAll(".bin");
 function deleteItem(e) {
   const productItem = e.target.closest("li");
   productItem.remove();
+  const searchField = document.querySelector("#search-form");
+  const currentItemList = Array.from(paginatedList.querySelectorAll("li"));
+  handleSearchFieldInput(currentItemList, searchField.value);
 }
 
 /* NEWSLETTER BUTTON */
