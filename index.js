@@ -1,6 +1,80 @@
+// DOM ELEMENTS
+const paginationLimit = 8;
+
+const paginationNumbers = document.getElementById("pagination-numbers");
+const paginatedList = document.getElementById("paginated-list");
+const listItems = paginatedList.querySelectorAll("li");
+
+const pageCount = Math.ceil(listItems.length / paginationLimit);
+let currentPage;
+
 // SEARCH ITEMS
 const searchField = document.querySelector("#search-form");
-searchField.addEventListener("input", () => {});
+
+searchField.addEventListener("input", (e) => {
+  const searchFieldText = e.target.value;
+  handleClearListBtnChange(searchFieldText);
+  handleSearchFieldInput(listItems, searchFieldText);
+});
+
+const handleSearchFieldInput = (listItems, searchFieldText) => {
+  listItems.forEach((item) => {
+    if (isMatching(item.innerHTML, searchFieldText)) {
+      item.removeAttribute("hidden");
+    } else {
+      item.setAttribute("hidden", "hidden");
+    }
+  });
+
+  const currentItemList = Array.from(listItems).filter(item => !item.getAttribute("hidden"));
+
+  paginationNumbers.innerHTML = '';
+  getPaginationNumbers(Math.ceil(currentItemList.length / paginationLimit));
+  setCurrentPage(1, currentItemList);
+
+  document.querySelectorAll(".pagination-number").forEach((pageLink) => {
+    const pageIndex = Number(pageLink.getAttribute("page-index"));
+
+    if (pageIndex) {
+      pageLink.addEventListener("click", () => {
+        setCurrentPage(pageIndex, currentItemList);
+      });
+    }
+  });
+};
+
+const isMatching = (title, searchText) => {
+  return title
+    .toLowerCase()
+    .replace(/ /g, "")
+    .includes(searchText.toLowerCase().replace(/ /g, ""));
+};
+
+// DISABLE CLEAR LIST BUTTON
+const clearListBtn = document.querySelector(".clearBtn");
+clearListBtn.addEventListener("click", (e) => {
+  searchField.value = "";
+  handleClearListBtnChange("");
+  console.log("adjust pagination / reset list items etc");
+});
+
+function handleClearListBtnChange(currentSearchFieldText) {
+  clearListBtn.disabled = currentSearchFieldText === "";
+
+  paginationNumbers.innerHTML = '';
+  getPaginationNumbers(pageCount);
+  setCurrentPage(1, listItems);
+
+  document.querySelectorAll(".pagination-number").forEach((pageLink) => {
+    const pageIndex = Number(pageLink.getAttribute("page-index"));
+
+    if (pageIndex) {
+      pageLink.addEventListener("click", () => {
+        setCurrentPage(pageIndex, listItems);
+      });
+    }
+  });
+}
 
 /* DELETE BUTTONS */
 const removeItemBtns = document.querySelectorAll(".overlay-btn");
@@ -44,14 +118,6 @@ items.forEach((el) => {
 });
 
 /* PAGINATION */
-const paginationNumbers = document.getElementById("pagination-numbers");
-const paginatedList = document.getElementById("paginated-list");
-const listItems = paginatedList.querySelectorAll("li");
-
-const paginationLimit = 8;
-const pageCount = Math.ceil(listItems.length / paginationLimit);
-let currentPage;
-
 const appendPageNumber = (index) => {
   const pageNumber = document.createElement("li");
   const pageLink = document.createElement("a");
@@ -66,13 +132,13 @@ const appendPageNumber = (index) => {
   paginationNumbers.appendChild(pageNumber);
 };
 
-const getPaginationNumbers = () => {
-  for (let i = 1; i <= pageCount; i++) {
+const getPaginationNumbers = (count) => {
+  for (let i = 1; i <= count; i++) {
     appendPageNumber(i);
   }
 };
 
-const setCurrentPage = (pageNum) => {
+const setCurrentPage = (pageNum, items) => {
   currentPage = pageNum;
 
   handleActivePageNumber();
@@ -80,7 +146,7 @@ const setCurrentPage = (pageNum) => {
   const prevRange = (pageNum - 1) * paginationLimit;
   const currRange = pageNum * paginationLimit;
 
-  listItems.forEach((item, index) => {
+  items.forEach((item, index) => {
     item.setAttribute("hidden", "hidden");
     if (index >= prevRange && index < currRange) {
       item.removeAttribute("hidden");
@@ -89,15 +155,15 @@ const setCurrentPage = (pageNum) => {
 };
 
 window.addEventListener("load", () => {
-  getPaginationNumbers();
-  setCurrentPage(1);
+  getPaginationNumbers(pageCount);
+  setCurrentPage(1, listItems);
 
   document.querySelectorAll(".pagination-number").forEach((pageLink) => {
     const pageIndex = Number(pageLink.getAttribute("page-index"));
 
     if (pageIndex) {
       pageLink.addEventListener("click", () => {
-        setCurrentPage(pageIndex);
+        setCurrentPage(pageIndex, listItems);
       });
     }
   });

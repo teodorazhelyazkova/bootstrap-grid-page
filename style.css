@@ -22,6 +22,10 @@ input {
   border-radius: 0px !important;
 }
 
+.pagination-number {
+  cursor: pointer;
+}
+
 .pagination .active {
   border: 1px solid #4b4b4b !important;
   color: #dc3545 !important;
@@ -49,6 +53,10 @@ input {
   aspect-ratio: 1 / 1;
 }
 
+.nav-link:hover {
+  color: #dc3545 !important;
+}
+
 .overlay:hover {
   opacity: 0.8;
 }
@@ -74,6 +82,9 @@ input {
   background-color: transparent;
 }
 
+.search .btn:disabled {
+  opacity: 0.5 !important;
+}
 .card {
   position: relative;
 }
