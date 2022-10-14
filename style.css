@@ -91,6 +91,7 @@ input {
 
 .card--carousel {
   border: none;
+  cursor: pointer;
 }
 
 .footer {
